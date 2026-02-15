@@ -2,6 +2,9 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
+  <link rel="icon" href="assets/img/logo.png">
+<link rel="apple-touch-icon" href="assets/img/logo.png">
+
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>خدماتنا — دش / سباكة / كهرباء بجدة</title>
   <meta name="description" content="خدمات مبرمج دش وسباك وكهربائي في جدة حي الحمدانية شارع الفالح. حلول عملية وتنفيذ مرتب." />
@@ -21,7 +24,18 @@
 
   <div class="navbar">
     <div class="container navbar-inner">
-      <div class="brand"><span class="dot"></span> مبرمج دش • سباك • كهربائي</div>
+<div class="brand">
+  <img src="assets/img/logo.png" alt="لوجو">
+  <span>محمود الخطيب — مبرمج دش • سباك • كهربائي</span>
+</div>
+
+
+
+      <!-- زر المنيو للموبايل -->
+      <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
       <nav class="nav" aria-label="التنقل">
         <a href="index.html">الرئيسية</a>
         <a href="about.html">من نحن</a>
@@ -53,51 +67,6 @@
             </ul>
           </div>
 
-          <div class="hr"></div>
-
-<h2 style="margin:0 0 10px">أعمالنا</h2>
-
-<div class="gallery">
-
-  <!-- الصور -->
-  <img src="assets/img/1.jpg" alt="">
-  <img src="assets/img/2.jpg" alt="">
-  <img src="assets/img/3.jpg" alt="">
-  <img src="assets/img/4.jpg" alt="">
-  <img src="assets/img/5.jpg" alt="">
-  <img src="assets/img/6.jpg" alt="">
-  <img src="assets/img/7.jpg" alt="">
-  <img src="assets/img/8.jpg" alt="">
-  <img src="assets/img/9.jpg" alt="">
-  <img src="assets/img/10.jpg" alt="">
-  <img src="assets/img/11.jpg" alt="">
-  <img src="assets/img/12.jpg" alt="">
-  <img src="assets/img/13.jpg" alt="">
-  <img src="assets/img/14.jpg" alt="">
-  <img src="assets/img/15.jpg" alt="">
-  <img src="assets/img/16.jpg" alt="">
-  <img src="assets/img/17.jpg" alt="">
-  <img src="assets/img/18.jpg" alt="">
-  <img src="assets/img/19.jpg" alt="">
-  <img src="assets/img/20.jpg" alt="">
-  <img src="assets/img/21.jpg" alt="">
-  <img src="assets/img/22.jpg" alt="">
-  <img src="assets/img/23.jpg" alt="">
-
-  <!-- الفيديوهات -->
-  <video controls>
-    <source src="assets/img/video1.mp4" type="video/mp4">
-  </video>
-
-  <video controls>
-    <source src="assets/img/video2.mp4" type="video/mp4">
-  </video>
-
-</div>
-
-<div class="hr"></div>
-
-
           <div class="feature">
             <h3>خدمات السباكة</h3>
             <ul class="list">
@@ -121,6 +90,53 @@
 
         <div class="hr"></div>
 
+        <!-- ✅ أعمالنا: 22 صورة + فيديوهين -->
+        <h2 style="margin:0 0 10px">أعمالنا</h2>
+
+        <div class="gallery">
+          <!-- 22 صورة -->
+          <img src="assets/img/1.jpg" alt="صورة أعمال 1">
+          <img src="assets/img/2.jpg" alt="صورة أعمال 2">
+          <img src="assets/img/3.jpg" alt="صورة أعمال 3">
+          <img src="assets/img/4.jpg" alt="صورة أعمال 4">
+          <img src="assets/img/5.jpg" alt="صورة أعمال 5">
+          <img src="assets/img/6.jpg" alt="صورة أعمال 6">
+          <img src="assets/img/7.jpg" alt="صورة أعمال 7">
+          <img src="assets/img/8.jpg" alt="صورة أعمال 8">
+          <img src="assets/img/9.jpg" alt="صورة أعمال 9">
+          <img src="assets/img/10.jpg" alt="صورة أعمال 10">
+          <img src="assets/img/11.jpg" alt="صورة أعمال 11">
+          <img src="assets/img/12.jpg" alt="صورة أعمال 12">
+          <img src="assets/img/13.jpg" alt="صورة أعمال 13">
+          <img src="assets/img/14.jpg" alt="صورة أعمال 14">
+          <img src="assets/img/15.jpg" alt="صورة أعمال 15">
+          <img src="assets/img/16.jpg" alt="صورة أعمال 16">
+          <img src="assets/img/17.jpg" alt="صورة أعمال 17">
+          <img src="assets/img/18.jpg" alt="صورة أعمال 18">
+          <img src="assets/img/19.jpg" alt="صورة أعمال 19">
+          <img src="assets/img/20.jpg" alt="صورة أعمال 20">
+          <img src="assets/img/21.jpg" alt="صورة أعمال 21">
+          <img src="assets/img/22.jpg" alt="صورة أعمال 22">
+
+          <!-- فيديو 1 -->
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="assets/videos/video1.mp4" type="video/mp4">
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
+
+          <!-- فيديو 2 -->
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source src="assets/videos/video2.mp4" type="video/mp4">
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
         <div class="feature">
           <h3>ملاحظة مهمة</h3>
           <p>نلتزم بأساسيات الأمان، وأي حالة تحتاج قطع/أجزاء إضافية يتم توضيحها للعميل قبل التركيب.</p>
@@ -129,17 +145,16 @@
     </div>
   </main>
 
-<!-- Floating Buttons -->
-<div class="float-wrap" aria-label="أزرار تواصل عائمة">
-  <a class="fbtn" data-wa href="#" target="_blank" rel="noopener noreferrer" aria-label="واتساب">
-    <img class="ficon" src="assets/icons/whatsapp.png" alt="واتساب">
-  </a>
+  <!-- Floating Buttons -->
+  <div class="float-wrap" aria-label="أزرار تواصل عائمة">
+    <a class="fbtn" data-wa href="#" target="_blank" rel="noopener noreferrer" aria-label="واتساب">
+      <img class="ficon" src="assets/icons/whatsapp.png" alt="واتساب">
+    </a>
 
-  <a class="fbtn" data-phone href="#" aria-label="اتصال">
-    <img class="ficon" src="assets/icons/phone.png" alt="اتصال">
-  </a>
-</div>
-
+    <a class="fbtn" data-phone href="#" aria-label="اتصال">
+      <img class="ficon" src="assets/icons/phone.png" alt="اتصال">
+    </a>
+  </div>
 
   <footer class="footer">
     <div class="container">

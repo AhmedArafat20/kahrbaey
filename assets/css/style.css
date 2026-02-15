@@ -266,3 +266,121 @@ a{color:inherit; text-decoration:none}
     grid-template-columns: 1fr;
   }
 }
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:12px;
+}
+
+.gallery img,
+.gallery video{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid var(--line);
+}
+
+.gallery video{
+  background:#000;
+}
+
+/* موبايل */
+@media (max-width: 768px){
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   Mobile Menu (Navbar)
+   ========================= */
+.nav-toggle{
+  display:none;
+  width:44px; height:44px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  cursor:pointer;
+}
+.nav-toggle span{
+  display:block;
+  height:2px;
+  width:18px;
+  margin:6px auto;
+  background:var(--text);
+  border-radius:2px;
+}
+
+@media (max-width: 900px){
+  .navbar-inner{ position:relative; }
+
+  .nav-toggle{ display:block; }
+
+  .nav{
+    display:none;
+    width:100%;
+    margin-top:10px;
+    padding:10px;
+    border-radius:16px;
+    border:1px solid var(--line);
+    background:rgba(11,15,20,.92);
+  }
+  .nav.open{ display:flex; flex-direction:column; }
+  .nav a{ width:100%; }
+}
+
+/* =========================
+   6 Images Cards
+   الصورة تظهر بالكامل
+   ========================= */
+.work-grid{
+  display:grid;
+  gap:12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.work-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.03);
+  border-radius:16px;
+  overflow:hidden;
+  padding:10px;
+}
+
+.work-card img{
+  width:100%;
+  height:220px;
+  object-fit:contain;     /* ✅ تظهر كلها بدون قص */
+  background:#0b0f14;
+  border-radius:12px;
+  display:block;
+}
+
+/* تابلت */
+@media (max-width: 900px){
+  .work-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+/* موبايل */
+@media (max-width: 560px){
+  .work-grid{ grid-template-columns: 1fr; }
+  .work-card img{ height:240px; }
+}
+
+/* حماية من كسر العرض */
+html, body{ overflow-x:hidden; }
+img, video{ max-width:100%; height:auto; }
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
+}
+
+.brand img{
+  width:40px;
+  height:40px;
+  object-fit:contain;
+  border-radius:8px;
+}
